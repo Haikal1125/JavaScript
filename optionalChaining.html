@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    
+    <script>
+        let person = {}; //ini data nullish /null/ undefined
+
+        /*tidak pakai optinal chaining
+            if (person.addres !== undefined  && person.addres !== null) {
+                country = person.addres.country;
+            }
+
+        */
+        //pakai optional chaining
+        let country = person?.addres?.country;
+
+        document.writeln(` sukses`);
+        document.writeln(`<p>${country}</p>`);
+
+    </script>
+</body>
+</html>

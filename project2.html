@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>menghitung berat dan tinggi badan dgn alert</title>
+</head>
+<body>
+    <script>
+      //menerima inputan dari user
+      let berat = prompt("masukan beratnya: ");
+      let tinggi = prompt(" masukan tingginya: ");
+
+      //menghitung bmi
+      let bmi = berat/(tinggi*tinggi);
+
+      //menampilkan hasil nya
+      alert("bmi anda adalah: " + bmi.toFixed(4));
+
+      //melihat kesehatan
+        if (bmi == 0.0018){
+          alert("kurus");
+        }else if(bmi >= 0.0018 && bmi <= 0.0024){
+          alert("normal");
+        }else if(bmi >= 0.0025 && bmi <=0.0029){
+          alert("overweight");
+        }else{
+          alert( "anda obesitas");
+        }
+
+
+
+
+
+    </script>
+</body>
+</html>
